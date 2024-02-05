@@ -99,7 +99,7 @@ header > .tablet {
 }
 
 .play {
-    padding-top: 34px;
+    padding-top: calc(100%/2 - 12);
     flex-basis: 100px;
     position: absolute;
     right: 0;
