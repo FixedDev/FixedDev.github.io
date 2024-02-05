@@ -135,7 +135,10 @@ footer {
     border: transparent;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    display: ruby;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .menu-item > i {
