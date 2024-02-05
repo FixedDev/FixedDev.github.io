@@ -99,8 +99,9 @@ header > .tablet {
 }
 
 .play {
-    padding-top: 39px;
-    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 0;
     padding-right: 30px;
