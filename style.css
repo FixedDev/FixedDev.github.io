@@ -100,9 +100,10 @@ header > .tablet {
 
 .play {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-grow: 1;
     align-items: center;
-    position: absolute;
+    position: relative;
     right: 0;
     padding-right: 30px;
 }
@@ -147,7 +148,6 @@ footer {
 }
 
 .mobile {
-    display: block;
 }
 
 .tablet {
@@ -160,7 +160,7 @@ footer {
     }
 
     .tablet {
-        display: block;
+        display: inherit;
     }
 
     #search-bar-text {
