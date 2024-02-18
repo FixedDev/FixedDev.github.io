@@ -12,9 +12,18 @@
 <body>
 <header>
     <label class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="search-bar-text" name="busqueda" placeholder="Busquemos algo...">
+        <i class="fa-solid fa-magnifying-glass search"></i>
+        <i class="fa-solid fa-xmark clear-button" id="clear-button" onclick="clearButtonFn()"></i>
+        <input type="text" id="search-bar-text" name="busqueda" placeholder="Busquemos algo..."
+               oninput="searchInputFn()">
     </label>
+    <div class="search-results" id ="search-results">
+        <p>test</p>
+        <p>test2</p>
+        <p>test3</p>
+        <p>test4</p>
+        <p>test5</p>
+    </div>
 
     <p class="mobile">Busquedas populares</p>
     <p class="tablet">Series & Peliculas</p>
@@ -26,14 +35,15 @@
                 <img src="https://grayscale.imageonline.co/grayscale-image.jpg" alt="portada" class="mobile">
 
                 <a href="#">
-                    <img src="https://i.pinimg.com/736x/68/41/aa/6841aa0d7c0633f7a016896603f0984f.jpg" class="tablet" alt="portada">
+                    <img src="https://i.pinimg.com/736x/68/41/aa/6841aa0d7c0633f7a016896603f0984f.jpg" class="tablet"
+                         alt="portada">
                 </a>
             </div>
             <div class="name mobile">
                 <p>The Flowers</p>
             </div>
             <div class="play mobile">
-                <a href="#" >
+                <a href="#">
                     <i class="fa-solid fa-play fa-2xl mobile"></i>
                 </a>
             </div>
@@ -47,7 +57,7 @@
                 <p>Dark</p>
             </div>
             <div class="play mobile">
-                <a href="#" >
+                <a href="#">
                     <i class="fa-solid fa-play fa-2xl mobile"></i>
                 </a>
             </div>
@@ -62,7 +72,7 @@
                 <p>Dark</p>
             </div>
             <div class="play mobile">
-                <a href="#" >
+                <a href="#">
                     <i class="fa-solid fa-play fa-2xl mobile"></i>
                 </a>
             </div>
@@ -76,7 +86,7 @@
                 <p>Dark</p>
             </div>
             <div class="play mobile">
-                <a href="#" >
+                <a href="#">
                     <i class="fa-solid fa-play fa-2xl mobile"></i>
                 </a>
             </div>
@@ -99,5 +109,6 @@
         </a>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
